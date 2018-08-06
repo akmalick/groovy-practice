@@ -1,0 +1,1 @@
+First, Gradle scripts are configuration scripts. As the script executes, it configures an object of a particular type. For example, as a build script executes, it configures an object of type Project. This object is called the delegate object of the script. The following table shows the delegate for each type of Gradle script.

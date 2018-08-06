@@ -1,0 +1,106 @@
+simple and expressive, optional types
+
+its compiled, not interpreted. compiled is not necessarily fast.
+
+groovy source compiled to bytecode
+
+java - cp groovy-all-2.30.0.jar ...
+
+so its bytecoede + groovy jar and u can run it.
+
+GroovyDevelopment Kit : groovy, groovyConsole, groovysh
+
+gvm(groovy environment manager)
+
+********** Demo **************
+
+Agenda :
+*Powers of two
+*Text Analyzer(script)
+*Rest example(script vs @Grab)
+*Spock
+*Trades DSL
+*QuickSort
+*SpringBoot
+*
+*
+
+
+************************
+//1+1
+//println "Hello World"
+//println ("Hello World");
+*************
+/////////Powers of two
+
+Java legacy way:---
+int n = 10;
+List list = new ArrayList();
+for(int i =0; i <n; i++){
+    list.add(Math.pow(2,i));
+}
+println(list);
+
+
+Groovy way :---
+
+All I wanht is map teh numbers from 0 t o n via a function 2 ** it 
+
+Advice : USe Java 8's tream Api from groovy.
+
+
+(0..< 10).collect {2**it}
+
+
+Java 8 way :----
+
+(0..<10).stream().map{2**it}.forEach{println it}
+or,
+(0..<10).stream().map{i -> 2 ** i}.forEach{println it}
+or,
+(0..<10).stream().map{int i -> 2 ** i}.forEach{println it}
+
+Java 8's collect() method is not same as Groovy's collect() method;
+
+
+*******************
+
+
+poopwreershell pretty powerfull
+There's a powershell version of gvm called "posh-gvm"
+
+
+******** Process text file *************
+
+
+
+
+
+
+
+**************** Start - EDITOR Content ***********
+
+//1+1
+//println "Hello World"
+//println ("Hello World");
+
+/////////Powers of two
+int n = 10;
+List list = new ArrayList();
+for(int i =0; i <n; i++){
+    list.add(Math.pow(2,i));
+}
+println(list);
+
+(0..< 10).collect {2**it}
+
+
+(0..<10).stream().map{2**it}.forEach{println it}
+
+******* End - Editor Content ************
+
+
+
+
+start from 18:00
+
